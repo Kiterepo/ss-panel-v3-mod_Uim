@@ -1,16 +1,15 @@
-	<footer class="ui-footer" style="position:relative">
-		<div class="container">
-			&copy; {$config["appName"]}  <a href="/staff">STAFF</a> {if $config["enable_analytics_code"] == 'true'}{include file='analytics.tpl'}{/if}
-		</div>
-	</footer>
+<footer class="ui-footer">
+    <div class="container">
+        &copy;{date("Y")} {$config['appName']} | Powered by <a href="/staff">SSPANEL</a>
+        {if $config['enable_analytics_code'] === true}{include file='analytics.tpl'}{/if}
+    </div>
+</footer>
 
-	<!-- js -->
-	<script src="/theme/material/js/jquery.min.js"></script>
-	<script src="//cdn.staticfile.org/jquery-validate/1.15.0/jquery.validate.min.js"></script>
-	<script src="//cdn.staticfile.org/datatables/1.10.13/js/jquery.dataTables.min.js"></script>
-	<script src="//cdn.staticfile.org/datatables/1.10.13/js/dataTables.material.min.js"></script>
-	<script src="/theme/material/js/base.js"></script>
-	<script src="/theme/material/js/project.js"></script>
-	
+<!-- js -->
+<script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.2"></script>
+<script src="https://cdn.jsdelivr.net/npm/datatables.net@1.10.19"></script>
+<script src="//cdn.jsdelivr.net/gh/DataTables/DataTables@1.10.19/media/js/dataTables.material.min.js"></script>
+<script src="/theme/material/js/base.min.js"></script>
+<script src="/theme/material/js/project.min.js"></script>
 </body>
 </html>
